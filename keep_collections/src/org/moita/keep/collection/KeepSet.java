@@ -7,12 +7,12 @@ import org.moita.keep.keeper.IKeeper;
 
 public class KeepSet {
 
-    public static <K extends Object> Set<K> create(Set<K> set, IKeeper<Set<K>> keeper) {
-        KeepSetProxy<K> setProxy = new KeepSetProxy<K>(set);
-        setProxy.setKeeper(keeper);
-        if (keeper.hasPreviousData()) {
-            setProxy.addAll(keeper.restore());
-        }
-        return setProxy;
-    }
+	public static <K extends Object> Set<K> create(Set<K> set, IKeeper<Set<K>> keeper) {
+		KeepSetProxy<K> setProxy = new KeepSetProxy<K>(set);
+		setProxy.setKeeper(keeper);
+		if (keeper.hasPreviousData()) {
+			setProxy.addAll(keeper.restore());
+		}
+		return setProxy;
+	}
 }

@@ -14,5 +14,5 @@ public class KeepList {
             listProxy.addAll(keeper.restore());
         }
         return listProxy;
-    }
+	}
 }
