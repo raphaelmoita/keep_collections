@@ -23,11 +23,7 @@ import org.moita.keep.exception.KeepException;
 
 public final class KeeperSerializer<T> implements IKeeper<T> {
 
-    private static final String FOLDER_NAME = System.getProperty("java.io.tmpdir");
-
-    private static final String FILE_NAME = "persistence.ser";
-
-    private String filePath = FOLDER_NAME + System.getProperty("file.separator") + FILE_NAME;
+    private String filePath = null;
 
     private boolean hasPreviousData = false;
 
