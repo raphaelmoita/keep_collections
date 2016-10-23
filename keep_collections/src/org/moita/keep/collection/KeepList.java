@@ -8,11 +8,11 @@ import org.moita.keep.keeper.IKeeper;
 public class KeepList {
 
 	public static <E extends Object> List<E> create(List<E> list, IKeeper<List<E>> keeper) {
-        KeepListProxy<E> listProxy = new KeepListProxy<E>(list);
-        listProxy.setKeeper(keeper);
-        if (keeper.hasPreviousData()) {
-            listProxy.addAll(keeper.restore());
-        }
-        return listProxy;
+		KeepListProxy<E> listProxy = new KeepListProxy<E>(list);
+		listProxy.setKeeper(keeper);
+		if (keeper.hasPreviousData()) {
+			listProxy.addAll(keeper.restore());
+		}
+		return listProxy;
 	}
 }
