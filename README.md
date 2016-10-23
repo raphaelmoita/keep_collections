@@ -1,7 +1,7 @@
 Keep Collections API
 ====================
 
-Keep Collection API is a simple way to keep collection data store wherever you want to by city, being restored automatically at instantiation time. 
+Keep Collection API is a simple way to keep collection data store wherever you want to, being restored automatically at instantiation time. 
 
 Keepers are the ones who knows how to save and restore data.
 
