@@ -28,4 +28,4 @@ The API contains just one Keeper, the KeeperSerializer! The KeeperSerializer, as
 
 Keeper creation process must follow just one rule ... implement **org.moita.keep.keeper.IKeeper** interface. IKeeper inteface define 3 basic methods used to store, restore and check is there is any previous data to recover. 
 
-> Concurrency at time to store and recover data must be observed at time to create a Keeper
+> Concurrency on storing and recovering data must be observed at time to create a Keeper
