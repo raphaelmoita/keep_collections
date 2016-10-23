@@ -11,13 +11,4 @@ public class KeepSet {
     public static <K extends Object> Set<K> create(Set<K> set, IKeeper<Set<K>> keeper) {
         return create(set, keeper, null);
     }
-
-    public static <K extends Object> Set<K> create(Set<K> set, IKeeper<Set<K>> keeper, KeepConfiguration configuration) {
-        KeepSetProxy<K> setProxy = new KeepSetProxy<K>(set);
-        setProxy.setKeeper(keeper);
-        if (keeper.hasPreviousData()) {
-            setProxy.addAll(keeper.restore());
-        }
-        return setProxy;
-    }
 }
