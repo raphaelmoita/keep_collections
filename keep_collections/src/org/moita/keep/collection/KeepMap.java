@@ -11,14 +11,4 @@ public class KeepMap {
     public static <K extends Object, V extends Object> Map<K, V> create(Map<K, V> map, IKeeper<Map<K, V>> keeper) {
         return create(map, keeper, null);
     }
-
-    public static <K extends Object, V extends Object> Map<K, V> create(Map<K, V> map, IKeeper<Map<K, V>> keeper, KeepConfiguration configuration) {
-        KeepMapProxy<K, V> mapProxy = new KeepMapProxy<K, V>(map);
-        mapProxy.setKeeper(keeper);
-        if (keeper.hasPreviousData()) {
-            mapProxy.putAll(keeper.restore());
-        }
-        return mapProxy;
-    }
-
 }
