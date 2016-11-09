@@ -6,8 +6,9 @@ Keep Collection API is a simple way to keep collection data store wherever you w
 - Projeto Eclipse Neon
 - Java 1.8
 
-###How to build
-Using Ant you can run "ant -buildfile build.xml export" to create a jar file (keep_collections_1.0.0.jar).
+###How to package (keep_collections-1.0.0.jar)
+- **Ant**: ant -buildfile build.xml export
+- **Mvn**: mvn package
 
 ###How to use
 ```Java
