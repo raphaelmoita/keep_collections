@@ -3,7 +3,6 @@ Keep Collections API
 
 Keep Collection API is a simple way to keep collection data store wherever you want to, being restored automatically at instantiation time. 
 
-- Projeto Eclipse Neon
 - Java 1.8
 
 ###How to package (keep_collections-1.0.0.jar)
