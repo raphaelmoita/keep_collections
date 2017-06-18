@@ -90,4 +90,8 @@ public class KeepMapProxy<K, V> implements Map<K, V> {
     public Set<java.util.Map.Entry<K, V>> entrySet() {
         return this.map.entrySet();
     }
+    
+    public void testGit() {
+    	
+    }
 }
